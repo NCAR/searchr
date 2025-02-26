@@ -28,6 +28,9 @@ def search_directory(directory, words):
     
     for root, _, files in os.walk(directory):
         for file in files:
+            if file.startswith('._'):
+                continue
+                
             file_path = os.path.join(root, file)
             relative_path = os.path.relpath(file_path, directory)
             
