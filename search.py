@@ -273,7 +273,6 @@ if __name__ == "__main__":
     html_output = generate_html(results, directory, words, base_url)
 
     # save to file
-    output_file = "search_results.html"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(html_output)
     
