@@ -30,7 +30,7 @@ def search_directory(directory, words):
         for file in files:
             if file.startswith('._'):
                 continue
-                
+
             file_path = os.path.join(root, file)
             relative_path = os.path.relpath(file_path, directory)
             
@@ -151,7 +151,7 @@ def generate_html(results, directory, words, base_url=None):
             <div class="card-body">
                 <h5 class="card-title">Search Parameters</h5>
                 <p><strong>Directory searched:</strong> """ + html.escape(directory) + """</p>
-                <p><strong>Website searched:</strong> """ + html.escape(base_url) + """</p>
+                <p><strong>Website searched:</strong> <a href='""" + html.escape(base_url) + """'>""" + html.escape(base_url) + """</a></p>
                 
                 <p><strong>Search terms:</strong> """ + html.escape(", ".join(words)) + """</p>
                 <div>
