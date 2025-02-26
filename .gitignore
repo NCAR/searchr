@@ -1,0 +1,13 @@
+# python bytecode
+__pycache__/
+*.py[cod]
+
+# mac files
+.DS_Store
+
+# local config
+config.txt
+
+# output files and dir
+output/*
+!output/.gitkeep

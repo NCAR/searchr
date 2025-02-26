@@ -1,0 +1,14 @@
+# Default configuration settings for search.py
+# Copy this file to config.txt and modify as needed
+
+# Directory to search
+DIRECTORY=/var/www/html
+
+# List of terms to search for (comma separated)
+SEARCH_TERMS=TERM1,TERM2
+
+# Base URL for links in the report
+BASE_URL=https://www.example.edu
+
+# Output filename for the HTML report
+OUTPUT_FILE=output/search_results.html
