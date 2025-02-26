@@ -221,7 +221,7 @@ if __name__ == "__main__":
         print(f"Error: Configuration file '{config_file}' not found, please create a config.txt file based on config.default.txt")
         sys.exit(1)
     
-    print(f"Using configuration from {config_file}")
+    print(f"Getting configuration from {config_file}")
 
     # Initialize variables
     directory = None
@@ -269,6 +269,8 @@ if __name__ == "__main__":
             print(f"  - {setting}")
         sys.exit(1)
     
+    print(f"Searching {directory} for terms and generating report...")
+
     # get results
     results = search_directory(directory, words)
     
